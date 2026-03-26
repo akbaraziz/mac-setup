@@ -17,10 +17,10 @@ git clone https://github.com/YOUR_USERNAME/mac-setup.git
 cd mac-setup
 
 # Make the script executable
-chmod +x install_v3.sh
+chmod +x install.sh
 
 # Run it
-./install_v3.sh
+./install.sh
 ```
 
 The script is idempotent — already-installed apps and tools are skipped, so you can safely re-run it.
@@ -77,7 +77,7 @@ export GITHUB_PERSONAL_ACCESS_TOKEN="your-token-here"
 
 ## Customizing
 
-To add or remove apps, edit the `APPS` or `CLI_TOOLS` arrays in `install_v3.sh`. Each entry follows the format:
+To add or remove apps, edit the `APPS` or `CLI_TOOLS` arrays in `install.sh`. Each entry follows the format:
 
 ```
 "Display Name|kind|value|label|note"
