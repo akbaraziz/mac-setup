@@ -121,7 +121,7 @@ APPS=(
   "Cursor|cask|cursor|Cursor|"
   "Davinci Resolve|mas|571213070|DaVinci Resolve|"
   "DetailsPro|mas|1524366536|DetailsPro|"
-  "Docker|cask|docker-desktop|Docker Desktop|"
+  "Docker Desktop|cask|docker-desktop|Docker Desktop|"
   "Downie 4|cask|downie|Downie|"
   "Draw.io|cask|drawio|draw.io|"
   "Dropbox|cask|dropbox|Dropbox|"
