@@ -89,6 +89,34 @@ Where `kind` is one of:
 - `mas` — Mac App Store app (value is the app ID)
 - `npm` — npm global package (`npm install -g`)
 
+### Finding Homebrew packages
+
+Search for available casks and formulae at [https://formulae.brew.sh](https://formulae.brew.sh) or from the terminal:
+
+```bash
+# Search for a cask (GUI app)
+brew search --cask <name>
+
+# Search for a formula (CLI tool)
+brew search --formula <name>
+```
+
+### Finding Mac App Store app IDs
+
+Use the `mas` CLI to search the App Store and get the numeric ID needed for `mas` entries:
+
+```bash
+# Search by name
+mas search "Final Cut"
+#   424389933  Final Cut Pro           (10.8.1)
+#   ...
+
+# List apps already installed (with their IDs)
+mas list
+```
+
+Use the ID from the first column (e.g., `424389933`) as the `value` in the `APPS` array.
+
 ## Included Shell Aliases
 
 <details>
