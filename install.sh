@@ -107,7 +107,6 @@ ensure_app_store_login
 # original|kind|value|label|note
 APPS=(
   "Antigravity|cask|antigravity|Antigravity|"
-
   "1 Password|cask|1password|1Password|"
   "Bartender|cask|bartender|Bartender|"
   "BetterDisplay|cask|betterdisplay|BetterDisplay|"
@@ -126,6 +125,7 @@ APPS=(
   "Draw.io|cask|drawio|draw.io|"
   "Dropbox|cask|dropbox|Dropbox|"
   "Final Cut|mas|424389933|Final Cut Pro|"
+  "Friendly Streaming Browser|mas|553245401|Friendly Streaming Browser|"
   "Github Desktop|cask|github|GitHub Desktop|"
   "Google Drive|cask|google-drive|Google Drive|"
   "iStats Menu|cask|istat-menus|iStat Menus|"
@@ -682,7 +682,7 @@ alias vd='deactivate'
 # LLM / AI Tools
 # ===========================================
 alias cdp="claude --dangerously-skip-permissions"
-alias cu='claude update'
+alias cuu='brew upgrade claude-code"
 alias cai="cd $HOME/Dropbox/GitHub_Repos/Projects/conduitai-bolt"
 
 # ===========================================
