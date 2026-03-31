@@ -127,6 +127,7 @@ APPS=(
   "Final Cut|mas|424389933|Final Cut Pro|"
   "Friendly Streaming Browser|mas|553245401|Friendly Streaming Browser|"
   "Github Desktop|cask|github|GitHub Desktop|"
+  "Google Chrome|cask|google-chrome|Google Chrome|"
   "Google Drive|cask|google-drive|Google Drive|"
   "iStats Menu|cask|istat-menus|iStat Menus|"
   "Keyboard Maestro|cask|keyboard-maestro|Keyboard Maestro|"
@@ -338,6 +339,26 @@ setup_ohmyposh() {
       || warn "Could not download oh-my-posh p10k theme. Check your connection."
     info "[ok] theme saved to $theme_file"
   fi
+}
+
+# ---------------------------------------------------------------------------
+# gstack (Claude Code skills)
+# ---------------------------------------------------------------------------
+
+setup_gstack() {
+  log "Setting up gstack (Claude Code skills)"
+
+  local gstack_dir="$HOME/.claude/skills/gstack"
+
+  if [[ -d "$gstack_dir" ]]; then
+    info "[skip] gstack already installed at $gstack_dir"
+  else
+    info "[install] cloning gstack"
+    git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git "$gstack_dir"
+  fi
+
+  info "[setup] running gstack setup"
+  (cd "$gstack_dir" && ./setup) || warn "gstack setup failed — you can retry with: cd $gstack_dir && ./setup"
 }
 
 # ---------------------------------------------------------------------------
@@ -781,6 +802,7 @@ ZSHRC_EOF
 
 setup_omz
 setup_ohmyposh
+setup_gstack
 write_zshrc
 
 log "Done"
