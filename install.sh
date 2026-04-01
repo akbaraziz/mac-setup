@@ -151,6 +151,7 @@ APPS=(
   "TestFlight|mas|899247664|TestFlight|"
   "TopNotch|cask|topnotch|TopNotch|"
   "Warp|cask|warp|Warp|"
+  "Wispr Flow|cask|wispr-flow|Wispr Flow|"
   "Zoom|cask|zoom|Zoom|"
   "XCode|mas|497799835|XCode|"
   "XCode Command Line Tools|mas|497799835|XCode Command Line Tools|"
