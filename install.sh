@@ -115,7 +115,6 @@ APPS=(
   "Camtasia|cask|camtasia|Camtasia|"
   "ChatGPT|cask|chatgpt|ChatGPT|"
   "Claude|cask|claude|Claude|"
-  "Claude Code|cask|claude-code|Claude Code|"
   "Codex|cask|codex-app|Codex|"
   "Cursor|cask|cursor|Cursor|"
   "Davinci Resolve|mas|571213070|DaVinci Resolve|"
@@ -360,6 +359,21 @@ setup_gstack() {
 
   info "[setup] running gstack setup"
   (cd "$gstack_dir" && ./setup) || warn "gstack setup failed — you can retry with: cd $gstack_dir && ./setup"
+}
+
+# ---------------------------------------------------------------------------
+# Claude CLI
+# ---------------------------------------------------------------------------
+
+setup_claude_cli() {
+  log "Setting up Claude CLI"
+
+  if command -v claude >/dev/null 2>&1; then
+    info "[skip] Claude CLI already installed"
+  else
+    info "[install] installing Claude CLI"
+    curl -fsSL https://claude.ai/install.sh | bash
+  fi
 }
 
 # ---------------------------------------------------------------------------
@@ -804,6 +818,7 @@ ZSHRC_EOF
 setup_omz
 setup_ohmyposh
 setup_gstack
+setup_claude_cli
 write_zshrc
 
 log "Done"
