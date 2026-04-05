@@ -142,6 +142,7 @@ APPS=(
   "Paste|mas|967805235|Paste|"
   "Raycast|cask|raycast|Raycast|"
   "Screen Studio|cask|screen-studio|Screen Studio|"
+  "Shazam|mas|897118787|Shazam|"
   "Slack|cask|slack|Slack|"
   "Snagit|cask|snagit|Snagit|"
   "Spark|cask|readdle-spark|Spark|"
