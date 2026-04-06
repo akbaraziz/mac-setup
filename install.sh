@@ -202,6 +202,7 @@ CLI_TOOLS=(
   "Node.js|formula|node|Node.js|"
   "Oh My Posh|formula|oh-my-posh|Oh My Posh|"
   "Resend CLI|formula|resend/tap/resend|Resend CLI|"
+  "Redis CLI|formula|redis-cli|Redis CLI|"
   "Stripe CLI|formula|stripe/stripe-cli/stripe|Stripe CLI|"
   "Supabase CLI|formula|supabase/tap/supabase|Supabase CLI|"
   "Vercel CLI|formula|vercel/cli/vercel|Vercel CLI|"
