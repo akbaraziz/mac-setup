@@ -150,6 +150,7 @@ APPS=(
   "SteerMouse|cask|steermouse|SteerMouse|"
   "TestFlight|mas|899247664|TestFlight|"
   "TopNotch|cask|topnotch|TopNotch|"
+  "VScode|cask|visual-studio-code|VSCode|"
   "Warp|cask|warp|Warp|"
   "Wispr Flow|cask|wispr-flow|Wispr Flow|"
   "Zoom|cask|zoom|Zoom|"

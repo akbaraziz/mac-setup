@@ -35,7 +35,7 @@ If Homebrew isn't present, it installs it automatically. Supports both `/opt/hom
 
 | Method | Apps |
 |--------|------|
-| **Homebrew Cask** | 1Password, Antigravity, Bartender, BetterDisplay, Beyond Compare, Camtasia, ChatGPT, Claude, Claude Code, Codex, Cursor, Docker Desktop, Downie 4, draw.io, Dropbox, GitHub Desktop, Google Drive, iStat Menus, Keyboard Clean Tool, Keyboard Maestro, Latest, Microsoft Office 365, NotchNook, OBS Studio, Raycast, Screen Studio, Slack, Snagit, Spark, Spotify, SteerMouse, TopNotch, Warp, Zoom |
+| **Homebrew Cask** | 1Password, Antigravity, Bartender, BetterDisplay, Beyond Compare, Camtasia, ChatGPT, Claude, Claude Code, Codex, Cursor, Docker Desktop, Downie 4, draw.io, Dropbox, GitHub Desktop, Google Drive, iStat Menus, Keyboard Clean Tool, Keyboard Maestro, Latest, Microsoft Office 365, NotchNook, OBS Studio, Raycast, Screen Studio, Slack, Snagit, Spark, Spotify, SteerMouse, TopNotch, VSCode, Warp, Zoom |
 | **Mac App Store** | Boom 3D, DaVinci Resolve, DetailsPro, Friendly Streaming Browser, Final Cut Pro, Klack, Logic Pro, Magnet, Okta Verify, Paste, TestFlight, Xcode, Xcode Command Line Tools |
 
 > Mac App Store apps require a prior purchase/download from your Apple ID. The script will warn and skip if an app can't be installed.
